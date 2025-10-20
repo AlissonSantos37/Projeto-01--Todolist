@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body {
+    background-color: #F3F2FF;
+    color: #2d2d2d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 60px;
+    border: 1px solid #D7D3ff
+}
+.logo {
+    color: #7063F0;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.welcome {
+    color: #555555;
+    font-size: 1rem;
+}
+.container {
+    width: 100%;
+    max-width: 700px;
+    padding: 40px 20px;
+}
+.add-task h2 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.task-input {
+    display: flex;
+    gap: 10px;
+}
+.task-input input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #d8d3ff;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1rem;
+    background-color: #ece8ff;
+    transition: 0.3s;
+}
+.task-input input:focus {
+    border-color: #7063F0;
+}
+.task-input button {
+    background-color: #7063F0;
+    color: #fff;
+    border: none;
+    padding: 3%;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.task-input button:hover {
+    background-color: #7063F0;
+}
+.tasks {
+    margin-top: 40px;
+}
+.tasks h3 {
+    font-size: 1.1rem;
+}
+.subtitle {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+.no-tasks {
+    text-align: center;
+    color: #666;
+    margin-top: 150px;
+}
+.no-tasks .emoji {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 10px;
+}
+::placeholder{
+    color: #7063F0; 
+}
+.linha{
+    margin-top: 30px;
+    border-bottom: 1px solid #e3ddfc;
+}
