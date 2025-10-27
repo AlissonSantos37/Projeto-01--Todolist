@@ -4,46 +4,53 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
+
 body {
-    background-color: #F3F2FF;
-    color: #2d2d2d;
+    background-color: #f2f0ff;
+    color: #2c2c2c;
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
 }
-.header {
+
+.cabeçalho {
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 20px 60px;
-    border: 1px solid #D7D3ff
+    border: 1px solid #e3ddfc;
 }
+
 .logo {
-    color: #7063F0;
+    color: #7b5cff;
     font-size: 1.4rem;
     font-weight: 700;
 }
-.welcome {
-    color: #555555;
+
+.Bemvindo {
+    color: #4a4a4a;
     font-size: 1rem;
 }
-.container {
+
+.tarefas {
     width: 100%;
     max-width: 700px;
     padding: 40px 20px;
 }
-.add-task h2 {
+
+.adicioanartarefas h2 {
     font-size: 1.2rem;
     margin-bottom: 15px;
 }
 
-.task-input {
+.entradatarefas {
     display: flex;
     gap: 10px;
 }
-.task-input input {
+
+.entradatarefas input {
     flex: 1;
     padding: 12px;
     border: 2px solid #d8d3ff;
@@ -53,47 +60,131 @@ body {
     background-color: #ece8ff;
     transition: 0.3s;
 }
-.task-input input:focus {
-    border-color: #7063F0;
+
+.entradatarefas input:focus {
+    border-color: #7b5cff;
 }
-.task-input button {
-    background-color: #7063F0;
+
+.entradatarefas button {
+    background-color: #7b5cff;
     color: #fff;
     border: none;
-    padding: 3%;
+    padding: 12px 20px;
     border-radius: 10px;
     font-weight: 600;
     cursor: pointer;
     transition: 0.3s;
 }
-.task-input button:hover {
-    background-color: #7063F0;
+
+.entradatarefas button:hover {
+    background-color: #6949ff;
 }
-.tasks {
-    margin-top: 40px;
+
+/* Cabeçalho das tarefas */
+.titulo-tarefas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    opacity: 0;
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
 }
-.tasks h3 {
-    font-size: 1.1rem;
+
+.titulo-tarefas.show {
+    opacity: 1;
+    transform: translateY(0);
 }
+
+.titulo-tarefas h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.contador {
+    color: #27ae60; /* verde */
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
 .subtitle {
     font-size: 0.9rem;
     color: #666;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    text-align: left;
 }
+
 .no-tasks {
     text-align: center;
     color: #666;
-    margin-top: 150px;
+    margin-top: 100px;
 }
+
 .no-tasks .emoji {
     font-size: 3rem;
     display: block;
     margin-bottom: 10px;
 }
-::placeholder{
-    color: #7063F0; 
+
+.tarefa-box {
+    background-color: #eae6ff;
+    border-radius: 12px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
 }
-.linha{
+
+.tarefa-box:hover {
+    border-color: #c4b9ff;
+    transform: translateY(-2px);
+}
+
+.tarefa-box.concluida {
+    background-color: #d9ffe4;
+    border-color: #98f3b7;
+}
+
+.tarefa-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tarefa-info input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.tarefa-info span {
+    font-weight: 600;
+}
+
+.tarefa-info small {
+    display: block;
+    color: #666;
+    font-size: 0.85rem;
+}
+
+.tarefa-box button {
+    background: none;
+    border: none;
+    color: #7b5cff;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.tarefa-box button:hover {
+    color: #5a3fff;
+}
+
+.linha {
     margin-top: 30px;
     border-bottom: 1px solid #e3ddfc;
 }
